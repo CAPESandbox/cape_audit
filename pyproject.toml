@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cape_audit"
+version = "1.1.2"
+authors = [
+  { name="Nia Catlin", email="niacatn@gmail.com" },
+]
+description = "Base classes for building CAPE sandbox evaluation tests"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    # Add any external pip requirements here, e.g.:
+    # "requests>=2.28.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/CAPESandbox/cape_audit"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["cape_audit*"]
+
+[tool.poetry]
+name = "cape_audit"
+version = "1.1.2"
+description = "Base classes for building CAPE sandbox evaluation tests"
+authors = ["Nia Catlin <niacatn@gmail.com>"]
+readme = "README.md"
+packages = [{include = "cape_audit"}]
